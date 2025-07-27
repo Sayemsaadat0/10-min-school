@@ -1,0 +1,5 @@
+1. A Title with description with a background of dark blue
+2. A Trailer Section with swiper js customization - 
+3. A Function that find the scrool height and make visible and 
+   hide contend 
+4. 
