@@ -256,16 +256,16 @@
 /* Small phones (≤ 420px) */
 @media screen and (max-width: 420px) {
   .oc-commonContainer {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
 /* Extra small phones or legacy devices (≤ 340px) */
 @media screen and (max-width: 340px) {
   .oc-commonContainer {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
