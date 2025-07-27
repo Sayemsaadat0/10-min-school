@@ -36,29 +36,6 @@ const CourseCTACard = ({isFixed} : {isFixed : boolean}) => {
     const prevRef = useRef<HTMLButtonElement>(null);
     const nextRef = useRef<HTMLButtonElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
-    // const [isSliderVisible, setIsSliderVisible] = useState(true);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (!containerRef.current) return;
-
-    //         const container = containerRef.current;
-    //         const containerRect = container.getBoundingClientRect();
-    //         const windowHeight = window.innerHeight;
-
-    //         // Check if container is out of view (scrolled past one screen height)
-    //         if (containerRect.top < -windowHeight) {
-    //             setIsSliderVisible(false);
-    //         }
-    //         // Check if container is back in view (scrolled back up within one screen height)
-    //         else if (containerRect.top > -windowHeight && containerRect.bottom > 0) {
-    //             setIsSliderVisible(true);
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
 
 
     const handleSlideChange = (swiper: SwiperCore) => {

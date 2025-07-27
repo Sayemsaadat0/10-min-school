@@ -48,11 +48,11 @@ const ProductDetailsContainer = () => {
 
 
 
-      <div className="border oc-commonContainer">
+      <section className="border oc-commonContainer">
         <div className="px-20 flex justify-between gap-5">
           <div className="border w-5/7">lorem5000</div>
           <div className="border w-2/7">
-            <section className="relative">
+            <div className="relative">
               <div
                 className={
                   isFixed
@@ -62,10 +62,10 @@ const ProductDetailsContainer = () => {
               >
                 <CourseCTACard isFixed={isFixed}/>
               </div>
-            </section>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
 
     </div>
