@@ -18,8 +18,8 @@ import {
     BookOpen,
     HelpCircle,
     Repeat,
-    ArrowLeft,
-    ArrowRight,
+    ChevronRight,
+    ChevronLeft,
 } from 'lucide-react';
 
 const slides = [
@@ -43,7 +43,7 @@ const CourseCTACard = ({isFixed} : {isFixed : boolean}) => {
     };
 
     return (
-        <div ref={containerRef} className="w-full max-w-sm mx-auto border p-1 border-gray-300  overflow-hidden  bg-white">
+        <div ref={containerRef} className="w-full max-w-sm min-w-sm mx-auto border p-1 border-gray-300  overflow-hidden  bg-white">
             {/* Main Swiper */}
            <div className={`${isFixed? 'hidden' : 'block'}`}>
              <div className={`relative `}>
@@ -100,14 +100,14 @@ const CourseCTACard = ({isFixed} : {isFixed : boolean}) => {
                         className="p-2 rounded-full bg-white/80 hover:bg-white transition-all shadow-md"
                         aria-label="Previous slide"
                     >
-                        <ArrowLeft className="w-4 h-4 text-gray-800" />
+                        <ChevronLeft className="w-4 h-4 text-gray-800" />
                     </button>
                     <button
                         ref={nextRef}
                         className="p-2 rounded-full bg-white/80 hover:bg-white transition-all shadow-md"
                         aria-label="Next slide"
                     >
-                        <ArrowRight className="w-4 h-4 text-gray-800" />
+                        <ChevronRight className="w-4 h-4 text-gray-800" />
                     </button>
                 </div>
             </div>
@@ -147,12 +147,12 @@ const CourseCTACard = ({isFixed} : {isFixed : boolean}) => {
             <div className='px-2'>
                 <div className=" py-3 flex gap-3">
                     <div className="text-2xl font-semibold text-gray-800">
-                        ৳3850 <span className="line-through text-gray-400 ml-2">৳5000</span>
+                        ৳1000 <span className="line-through text-gray-400 ml-2">৳1000</span>
                     </div>
                     <div className='flex items-center px-2 relative h-fit whitespace-nowrap'>
                         <div className='w-1 h-1 bg-white rounded-full z-30 mt-1'></div>
                         <div className='w-4 h-4 rotate-45 mt-1 -mx-2.5 z-10 bg-orange-400 py-1'></div>
-                        <div className="bg-orange-400 w-fit px-2 py-1 z-20 rounded text-xs text-white font-medium mt-1">১১৫০ ৳ ছাড়</div>
+                        <div className="bg-orange-400 w-fit px-2 py-1 z-20 rounded text-xs text-white font-medium mt-1">1000 ৳ ছাড়</div>
                     </div>
 
                 </div>
