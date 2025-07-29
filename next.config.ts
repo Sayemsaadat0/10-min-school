@@ -21,6 +21,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'swiperjs.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.10minuteschool.com',
+      },
     ],
   },
 };

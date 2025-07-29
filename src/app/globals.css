@@ -204,7 +204,7 @@
   --text-w-title-4-Medium-48--font-weight: 600;
 }
 
-/* Container */
+/* Base container */
 .oc-commonContainer {
   max-width: 1612px;
   margin-left: auto;
@@ -212,6 +212,16 @@
   padding-left: 60px;
   padding-right: 60px;
 }
+
+/* Extra large laptops and small desktops (≤ 1440px) */
+@media screen and (max-width: 1440px) {
+  .oc-commonContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Medium desktops and large tablets (≤ 1280px) */
 @media screen and (max-width: 1280px) {
   .oc-commonContainer {
     padding-left: 40px;
@@ -219,6 +229,7 @@
   }
 }
 
+/* Tablets and small laptops (≤ 1024px) */
 @media screen and (max-width: 1024px) {
   .oc-commonContainer {
     padding-left: 30px;
@@ -226,6 +237,15 @@
   }
 }
 
+/* Large phones and phablets (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .oc-commonContainer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Standard mobile phones (≤ 600px) */
 @media screen and (max-width: 600px) {
   .oc-commonContainer {
     padding-left: 20px;
@@ -233,10 +253,19 @@
   }
 }
 
+/* Small phones (≤ 420px) */
+@media screen and (max-width: 420px) {
+  .oc-commonContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Extra small phones or legacy devices (≤ 340px) */
 @media screen and (max-width: 340px) {
   .oc-commonContainer {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
